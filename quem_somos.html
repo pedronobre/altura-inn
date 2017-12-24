@@ -13,10 +13,16 @@
     <div id="hgroup">
       <h1><a href="index.html">Nobre Cottage</a></h1>
     </div>
-    <nav>
+        <nav>
       <ul>
         <li><a href="quem_somos.html">Quem somos?</a></li>
-        <li><a href="onde_estamos.html">Onde estamos</a></li>
+          <div class="dropdown" onmouseenter="menu();" >
+              <li><a>Alojamentos</a></li>
+                          <div id="myDropdown" class="dropdown-content">
+                              <li><a href="NobreCottage.html">Nobre Cottage</a></li>
+                              <li><a href="AlturaInn.html">Altura Inn</a></li>
+                          </div>
+              </div>
         <li><a href="informacoes_uteis.html">Informacoes uteis</a></li>
         <li><a href="contactenos.html">Contacte-nos</a></li>
       </ul>
@@ -142,4 +148,5 @@
   </footer>
 </div>
 </body>
+    <script src="scripts/quemSomosjs.js" ></script>
 </html>
