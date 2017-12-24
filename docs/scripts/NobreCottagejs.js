@@ -1,3 +1,21 @@
+//dropdown
+function menu() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick= function(event) {
+  if (!event.target.matches('.botaomenu')) {
+
+    let dropdowns = document.getElementsByClassName("dropdown-content")
+    let i;
+    for (i = 0; i < dropdowns.length; i++) {
+      let openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -27,23 +45,4 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
-}
-
-//dropdown
-function menu() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
-
-window.onclick= function(event) {
-  if (!event.target.matches('.botaomenu')) {
-
-    let dropdowns = document.getElementsByClassName("dropdown-content")
-    let i;
-    for (i = 0; i < dropdowns.length; i++) {
-      let openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
 }
