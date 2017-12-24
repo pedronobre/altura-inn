@@ -32,15 +32,15 @@ img{margin:0; padding:0; border:none; line-height:normal; vertical-align:middle;
 address, article, aside, figcaption, figure, footer, header, nav, section{display:block; margin:0; padding:0;}
 
 q{display:block; padding:0 10px 8px 10px; color:#979797; background-color:#ECECEC; font-style:italic; line-height:normal;}
-q:before{content:'“ '; font-size:26px;}
-q:after{content:' „'; font-size:26px; line-height:0;}
+q:before{content:'â€œ '; font-size:26px;}
+q:after{content:' â€ž'; font-size:26px; line-height:0;}
 
 /* ----------------------------------------------Wrapper-------------------------------------*/
 
 div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left;}
 
 .row1, .row1 a{color:#C0BAB6; background-color:#333333;}
-.row2{color:#979797; background-color:#FFFFFF;}
+.row2{color:#979797; background-color:#FFFFFF; }
 .row2 a{color:#FF9900; background-color:#FFFFFF;}
 .row3{color:#989898; background-color:#333333;}
 .row3 a{color:#FF9900; background-color:#333333;}
@@ -57,8 +57,8 @@ h1, h2, h3, h4, h5, h6{margin:0; padding:0; font-size:32px; font-weight:normal; 
 address{font-style:normal;}
 
 blockquote, q{display:block; padding:8px 10px; color:#979797; background-color:#ECECEC; font-style:italic; line-height:normal;}
-blockquote:before, q:before{content:'“ '; font-size:26px;}
-blockquote:after, q:after{content:' „'; font-size:26px; line-height:0;}
+blockquote:before, q:before{content:'â€œ '; font-size:26px;}
+blockquote:after, q:after{content:' â€ž'; font-size:26px; line-height:0;}
 
 form, fieldset, legend{margin:0; padding:0; border:none;}
 legend{display:none;}
@@ -78,7 +78,9 @@ input, textarea, select{font-size:12px; font-family:Georgia,"Times New Roman",Ti
 .lastbox{margin-right:0;}
 
 /*----------------------------------------------Header-------------------------------------*/
-
+#bandeiras{
+    float: right;
+}
 #header{padding:20px 0;}
 
 #header #hgroup{
@@ -103,14 +105,12 @@ input, textarea, select{font-size:12px; font-family:Georgia,"Times New Roman",Ti
     margin:10px 0 0 0; 
     padding:20px 0; 
     color:#C0BAB6;
-    background-color:#232323;
-    font-size: 15px;
-    }
+    background-color:#232323;}
 #header nav ul{padding:0 20px;}
 #header nav li{display:inline; margin-right:25px; text-transform:uppercase;}
 #header nav li.last{margin-right:0;}
 #header nav li a{color:#C0BAB6; background-color:#232323;}
-#header nav li a:hover{color:#FF9900; background-color:#232323;}  
+#header nav li a:hover{color:#FF9900; background-color:#232323;}
 
 /*----------------------------------------------Content Area-------------------------------------*/
 
@@ -125,12 +125,85 @@ input, textarea, select{font-size:12px; font-family:Georgia,"Times New Roman",Ti
     
     
 }
-#slideimage{
-    width: 100%;
+.content1{
+    background-color: #eae7e7;
     position: relative;
+    resize: horizontal;
+    
+   
+   
 }
+.texto{
+    width: 35%;
+    font-size: 20px;
+    left: 7%;
+    position: relative;
+    background-color: #e8e6e6;
+    padding: 10px;
+    display: inline-block;
+    margin: 10px;
+    height: 90%;
+}
+.imagem{
+    float: right;
+    right: 7%;
+    margin: 10px;
+    width: 550px;
+    height: 400px; 
+  
 
+}
+.imageming{
+    float: right;
+    right: 7%;
+    margin: 10px;
+    width: 550px;
+    max-height:350px; 
+  
+
+}
+#slideimage{
+    width: 93%;
+    position: relative;
+    left: 3.5%;
+    padding: 4px;
+}
+.tabelas{
+    float: right;
+    position: relative;
+    margin: 50px;
+    width: 400px;
+    font-size: 20px;
+    
+}
+.tabelas td{
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+/* .tabela1{
+    font-size: 20px;
+    float: right;
+    position: relative;
+    display: inline-block;
+}
+.tabela2{
+    font-size: 20px;
+    float: right;
+    position: relative;
+    display: inline-block;
+} */
+.inclui{
+    float: right;
+    font-size: 20px;
+    width: 30%;
+    margin: 50px;
+    background-color: #eae7e7;
+}
 /* ------Main Content-----*/
+#nobrecottagetitle{
+    position: relative;
+    text-align: center;
+}
 
 #container #homepage{display:block; width:100%; line-height:1.8em;}
 
@@ -171,8 +244,7 @@ input, textarea, select{font-size:12px; font-family:Georgia,"Times New Roman",Ti
     right: 30px;
     
 }
-#container #homepage #intro article figure figcaption{
-    float:left;
+#container #homepage #intro article figure figcaption{float:left;
     width:460px;
     position: relative;
     left: 1%;
@@ -195,114 +267,11 @@ input, textarea, select{font-size:12px; font-family:Georgia,"Times New Roman",Ti
 
 #footer section nav li{margin:0 0 5px 0; padding:0 0 5px 0; border-bottom:1px solid #555555;}
 #footer section nav li.last{margin:0;}
+
 /*----------------------------------------------Copyright-------------------------------------*/
 
 #copyright{padding:20px 0;}
 #copyright p{margin:0; padding: 0;}
-* {
-  box-sizing: border-box;
-}
-
-/* Position the image container (needed to position the left and right arrows) */
-.container {
-  position: relative;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
-  cursor: pointer;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-    left: 200px
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-top: 300px
-    
-}
-.prev{
-    left: 47%;
-    top: 300px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 90px;
-     position: relative;
-      width: 50%;
-      right:-48.5%;
-}
-
-/* Container for image text */
-.caption-container {
-      text-align: center;
-      background-color: #222;
-      padding: 2px 16px;
-      color: white;
-      position: relative;
-      width: 50%;
-      right:-48.5%;
-    height: 50px;
-    top: -50px
-
-}
-
-.row:after {
-  content: "";
-  display: inline-block;
-position: relative;
-    clear: both;
-    
-}
-
-
-/* Six columns side by side */
-.column {
-  float: left;
-  width: 7%;
-}
-
-/* Add a transparency effect for thumnbail images */
-.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-    opacity: 1;}
 /* DropDown */
 .botaomenu {
     margin: 0px 8px;
@@ -344,3 +313,110 @@ position: relative;
 }
 
 .show {display:block;}
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+position: relative;
+    float: left;
+    left: 7%;
+    margin: 50px;
+    
+    
+}
+
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+#mapa{
+    position: relative;
+    display: inline-block;
+    float: left;
+    left: 7%;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+
+}
+
+/* Position the "next button" to the right */
+.next {
+   
+    
+}
+.prev {
+   
+    
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+    bottom: 0px;
+
+  
+     
+}
+
+/* Container for image text */
+.caption-container {
+      text-align: center;
+      background-color: #222;
+      padding: 2px 16px;
+      color: white;
+      position: relative;
+      width: 50%;
+      right:-48.5%;
+    height: 50px;
+    top: -50px
+
+}
+
+.row:after {
+  content: "";
+  display: inline-block;
+position: relative;
+    clear: both;
+    
+}
+.prev {
+    left: 200px;
+}
+
+.prev {
+    left: 200px;
+    
+}

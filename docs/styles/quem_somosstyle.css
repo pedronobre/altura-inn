@@ -202,3 +202,44 @@ input, textarea, select{font-size:12px; font-family:Georgia,"Times New Roman",Ti
 
 #copyright{padding:20px 0;}
 #copyright p{margin:0; padding: 0;}
+/* DropDown */
+.botaomenu {
+    margin: 0px 8px;
+    padding: 5px 5px;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+}
+
+.botaomenu a:hover{
+   color:#FF9900;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #232323;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 5%
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+   text-align: center;
+    padding:20px 0; 
+    color:#C0BAB6;
+    background-color:#232323;
+    font-size: 15px;
+}
+
+.show {display:block;}
